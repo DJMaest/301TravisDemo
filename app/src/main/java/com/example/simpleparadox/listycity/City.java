@@ -17,6 +17,10 @@ public class City implements Comparable<City>{
         return this.province;
     }
 
+    boolean checkProvince(String province){
+        return this.getProvinceName().equals(province);
+    }
+
     @Override
     public int compareTo(City o) {
         return city.compareTo(o.getCityName());
